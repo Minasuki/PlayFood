@@ -60,7 +60,7 @@ export const SelectedMeal = styled.div`
 `;
 
 export const SelectedMealDetails = styled.div`
-  width: 55%;
+  width: 20%;
   height: 72%;
   display: flex;
   flex-direction: row;
@@ -113,7 +113,7 @@ export const Videos = styled.div`
 `;
 
 export const AppHeroDetails = styled.div`
-  width: 65%;
+  width: 72%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,7 +155,7 @@ export const SelectedMealDetailsText = styled.div`
 
 export const AppHeroIngredients = styled.div`
   display: flex;
-  width: 30%;
+  width: 20%;
   max-height: 100%; /* Ajusta la altura máxima según sea necesario */
   overflow-y: auto;
 
@@ -213,7 +213,7 @@ export const SelectedMealIngredients = styled.div`
 
 export const SelectedMealInstruction = styled.div`
   height: 50%;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-weight: 300;
   color:${({theme})=>theme.text};
 

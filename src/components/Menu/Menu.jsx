@@ -33,7 +33,7 @@ const Menu = ({ toggleTema }) => {
         </Link>
         <BotonesSeparados>
           {location.pathname === "/PlayFood" && (
-            <Link to="/new">
+            <Link to="/new-video">
               <MenuButton>Nuevo Video</MenuButton>
             </Link>
           )}

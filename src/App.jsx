@@ -19,9 +19,9 @@ const App = () => {
       <Router>
         <Menu toggleTema={toggleTema} />
         <Routes>
-          <Route path="/peliculas-react" element={<CategoriaMail />} />
+          <Route path="/PlayFood" element={<CategoriaMail />} />
           <Route path="/new-category" element={<NuevaCategoria />} />
-          <Route path="/new" element={<NuevoVideo />} />
+          <Route path="/new-video" element={<NuevoVideo />} />
         </Routes>
       </Router>
     </ThemeProvider>
