@@ -28,12 +28,12 @@ const Menu = ({ toggleTema }) => {
   return (
     <MenuContainer>
       <MenuContent>
-        <Link to="/PlayFood">
+        <Link to="/PlayFood/">
           <MenuLogo src={logo} alt="Logo" />
         </Link>
         <BotonesSeparados>
-          {location.pathname === "/PlayFood" && (
-            <Link to="/new-video">
+          {location.pathname === "/PlayFood/" && (
+            <Link to="/new-video/">
               <MenuButton>Nuevo Video</MenuButton>
             </Link>
           )}

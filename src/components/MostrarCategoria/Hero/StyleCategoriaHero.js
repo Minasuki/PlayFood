@@ -60,7 +60,7 @@ export const SelectedMeal = styled.div`
 `;
 
 export const SelectedMealDetails = styled.div`
-  width: 20%;
+  width: 55%;
   height: 72%;
   display: flex;
   flex-direction: row;
