@@ -1,26 +1,31 @@
-import { useState } from 'react'
-import './App.css'
+import "./components/style/normalize.css";
+import Menu from "./components/Menu/Menu";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NuevoVideo from "./components/Pages/NuevoVideo/NuevoVideo";
+import CategoriaMail from "./components/MostrarCategoria/CategoriaAxios/CategoriaMail";
+import NuevaCategoria from "./components/Pages/NuevaCategoria/NuevaCategoria";
 
-function App() {
-  const [count, setCount] = useState(0)
+//dark mode
+import { temaClaro, temaOscuro } from "./components/mobx/themes";
+import { ThemeProvider } from "styled-components";
+import { UseMode } from "./components/mobx/UseMode";
 
+const App = () => {
+  const { temaMode, toggleTema } = UseMode();
   return (
-    <>
-   
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <ThemeProvider theme={temaMode ? temaOscuro : temaClaro}>
+      {/*  ///////////////////////////////////////////////////  */}
+      {/*  //////////  Aqui se muestra el Hero  //////////////  */}
+      <Router>
+        <Menu toggleTema={toggleTema} />
+        <Routes>
+          <Route path="/peliculas-react" element={<CategoriaMail />} />
+          <Route path="/new-category" element={<NuevaCategoria />} />
+          <Route path="/new" element={<NuevoVideo />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;

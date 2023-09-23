@@ -1,0 +1,11 @@
+@media (max-width: 412px) {
+    .botonProncipal{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .botonNuevo{
+        width: 100%;
+    }
+  }
