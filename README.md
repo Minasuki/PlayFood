@@ -37,7 +37,3 @@ Si deseas ejecutar este proyecto en tu propio entorno local, sigue estos pasos:
 Este proyecto se distribuye bajo la licencia [MIT](LICENSE). Siéntete libre de utilizar, modificar y compartir este proyecto de acuerdo con los términos de la licencia.
 
 ¡Esperamos que disfrutes explorando nuevas recetas y compartiendo tu pasión por la cocina en nuestro sitio web!
-
----
-
-Puedes personalizar esta descripción para que se adapte a los detalles específicos de tu proyecto y aportar información adicional sobre el equipo, las fuentes de datos, el diseño y cualquier otra información relevante.
